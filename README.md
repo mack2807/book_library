@@ -45,7 +45,12 @@ This is a RESTful API developed using Node.js for managing books. The API allows
    - [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) (Cloud-based MongoDB service)
    - [Install MongoDB](https://docs.mongodb.com/manual/installation/) (Official MongoDB installation guide)
 
-4. Create a `.env` file in the root directory and add the MongoDB connection URI:
+ - Database link and password obtained from MongoDB Atlas and stored in `config.env` file.
+- Credentials passed from `config.env` file to `db.js` file for MongoDB connection setup.
+- "Connection Setup" section includes a concise code snippet demonstrating MongoDB connection using Mongoose.
+- Parameters like `useNewUrlParser` and `useUnifiedTopology` utilized within `mongoose.connect()` function.
+- "Testing the Connection" section provides a step-by-step guide for developers to confirm MongoDB connection.
+- Developers encouraged to execute a test script or inspect console for 'DB connection successful!' message as a confirmation of successful connection.
    ```
    MONGODB_URI=<your-mongodb-connection-uri>
    ```
