@@ -10,10 +10,8 @@ router.get('/hii', (req, res)=>
   })
 })
 
-router
-  .route('/')
-  .get(bookController.getAllBooks)
-  .post(bookController.createBook);
+router.route('/getBooks').get(bookController.getAllBooks)
+router.route('/addBook').post(bookController.createBook);
 
 router
   .route('/:id')
